@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Result</title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+<body>
+<div class="result">
+  Ви набрали <span th:text="${result}"></span> <span class="word" th:text="${word}"></span> з 15
+</div>
+<div class="again"><a class="reference" href="/">Спробувати спочатку</a></div>
+</body>
+</html>

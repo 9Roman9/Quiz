@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" th:href="@{/style.css}">
+<body>
+<div class="question">Яка столиця країни <span th:text="${country}"></span>?</div>
+<div>
+    <form action="/test9" method="post">
+        <input class="response" type="text" name="capital">
+    </form>
+</div>
+</body>
+</html>
